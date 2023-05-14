@@ -36,4 +36,10 @@ fn main() {
     let element = a[index];
 
     println!("The value of the element at {index} is: {element}");
+
+    another_function();
+}
+
+fn another_function() {
+    println!("This is a different function");
 }
