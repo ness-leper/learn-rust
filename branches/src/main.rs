@@ -1,18 +1,12 @@
 fn main() {
-    let condition = false;
-    let number = if condition { 6 } else { 12 };
-
-    if number % 4 == 0 {
-        show_divide(4);
-    } else if number % 3 == 0 {
-        show_divide(3);
-    } else if number % 2 == 0 {
-        show_divide(2);
-    } else {
-        println!("number is not divisible by 4, 3, 2");
-    }
+    println!("72F is {}", f_to_c(72));
+    println!("22C is {}", c_to_f(22));
 }
 
-fn show_divide(res: i32) {
-    println!("number is divisible by {}", res);
+fn f_to_c(f: i32) -> i32 {
+    (f - 32) * 5 / 9
+}
+
+fn c_to_f(c: i32) -> i32 {
+    c * 9 / 5 + 32 
 }
